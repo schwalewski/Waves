@@ -17,7 +17,7 @@ u_curr = np.zeros((Nx,Ny))
 u_next = np.zeros((Nx,Ny))
 obstacles = np.zeros((Nx,Ny), dtype = bool)
 
-obstacles[150,:] = True
+#obstacles[150,:] = True
 def run_simulation(u_prev, u_curr, u_next, obstacles, dt, h, c, num_steps, x_src, y_src, A, omega):
     lmbda = (c*dt)/h
     frames = []
